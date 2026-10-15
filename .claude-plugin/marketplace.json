@@ -1,0 +1,15 @@
+{
+  "name": "pepe-avila",
+  "description": "Plugins de Pedro Avila Domizi",
+  "owner": {
+    "name": "Pedro Avila Domizi",
+    "url": "https://github.com/pepe-avila"
+  },
+  "plugins": [
+    {
+      "name": "mascota",
+      "source": "./plugins/mascota",
+      "description": "Una mascota de escritorio que reacciona a lo que hace Claude Code: piensa mientras preparás la respuesta, avisa cuando hace falta un permiso, festeja al terminar y cuenta cuánto uso te queda."
+    }
+  ]
+}

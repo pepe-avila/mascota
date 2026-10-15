@@ -1,0 +1,28 @@
+{
+  "name": "mascota",
+  "version": "1.2.1",
+  "description": "Una mascota de escritorio que reacciona a lo que hace Claude Code: piensa mientras preparás la respuesta, avisa cuando hace falta un permiso, festeja al terminar y cuenta cuánto uso te queda.",
+  "author": {
+    "name": "Pedro Avila Domizi",
+    "url": "https://github.com/pepe-avila"
+  },
+  "homepage": "https://github.com/pepe-avila/mascota",
+  "repository": "https://github.com/pepe-avila/mascota",
+  "license": "MIT",
+  "keywords": [
+    "mascota",
+    "pet",
+    "escritorio",
+    "desktop",
+    "hooks",
+    "python"
+  ],
+  "userConfig": {
+    "python": {
+      "type": "string",
+      "title": "Comando de Python",
+      "description": "Cómo se llama Python en tu sistema. En Windows suele ser 'python'; en macOS y Linux, 'python3'. Hace falta Python 3.9 o superior.",
+      "default": "python3"
+    }
+  }
+}

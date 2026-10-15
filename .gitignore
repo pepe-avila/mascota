@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Lo que se genera al empaquetar
+dist/
+build/
+*.mcpb
+*.spec
+
+# Node (por si algún día se instalan dependencias)
+node_modules/
+
+# Temporales y registros
+*.tmp
+*.log
+
+# Archivos que crean los sistemas operativos y Google Drive
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,64 @@
+{
+  "manifest_version": "0.3",
+  "name": "mascota",
+  "display_name": "Mascota",
+  "version": "1.2.1",
+  "description": "Una mascota de escritorio que se abre con Claude Desktop y reacciona mientras chateás.",
+  "long_description": "Abre la mascota de escritorio cuando arranca Claude Desktop. En el chat, Claude la pone a pensar al empezar cada respuesta y festeja al terminar. Hace falta Python 3.9 o superior (de python.org); la primera vez instala PySide6 en un entorno propio y tarda un minuto.",
+  "author": {
+    "name": "Pedro Avila Domizi",
+    "url": "https://github.com/pepe-avila"
+  },
+  "homepage": "https://github.com/pepe-avila/mascota",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pepe-avila/mascota"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "keywords": [
+    "mascota",
+    "pet",
+    "escritorio",
+    "desktop"
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ],
+      "env": {
+        "MASCOTA_PYTHON": "${user_config.python}"
+      }
+    }
+  },
+  "user_config": {
+    "python": {
+      "type": "string",
+      "title": "Comando de Python (opcional)",
+      "description": "Dejalo vacío para que la busque sola. Si tenés varias versiones, podés indicar cuál usar, por ejemplo 'py -3.13' o la ruta completa a python.exe.",
+      "required": false,
+      "default": ""
+    }
+  },
+  "tools": [
+    {
+      "name": "mascota_estado",
+      "description": "Pone a la mascota a pensar al empezar cada respuesta y la hace festejar al terminar."
+    },
+    {
+      "name": "mascota_decir",
+      "description": "Muestra un mensaje en el globo de la mascota."
+    }
+  ],
+  "compatibility": {
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  }
+}
